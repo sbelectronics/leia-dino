@@ -1,0 +1,1 @@
+rsync -avz --exclude "__history" --exclude "*~" --exclude "*.img" --exclude "home-pi-*" --exclude "dot*" --exclude "*.conf" --exclude "*.pyc" --exclude "royalty_free" --exclude ".git" -e ssh . pi@leiadino1.lan:/home/pi/dino

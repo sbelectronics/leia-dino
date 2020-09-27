@@ -1,1 +1,9 @@
 curl -sS https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2samp.sh | bash
+
+# setup cron
+sudo crontab -e
+  @reboot bash /home/pi/dino/start_dino.sh &> /dev/null
+
+# support for the auto-shutdown
+emacs /boot/config.txt
+  dtoverlay=gpio-poweroff,gpiopin=4

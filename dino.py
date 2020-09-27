@@ -10,7 +10,7 @@ import traceback
 PIN_LIGHT=23
 PIN_BUTTON=24
 
-INACTIVITY_TIMEOUT=30
+INACTIVITY_TIMEOUT=300
 
 songsets = {"all": ["sounds/zapsplat_animals_dinosaur_herbivore_eating_plant_001_20180.mp3",
                     "sounds/zapsplat_animals_dinosaur_herbivore_eating_plant_002_20181.mp3",
